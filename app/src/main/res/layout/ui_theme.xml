@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_theme_primary">
+
+        <EditText
+            android:hint="请输入关键字查找..."
+            android:id="@+id/theme_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            style="@style/main_ic"
+            android:id="@+id/theme_top_img"
+            android:background="@drawable/main_search"
+            />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/theme_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="5dp"
+        >
+
+        </ListView>
+
+
+</LinearLayout>

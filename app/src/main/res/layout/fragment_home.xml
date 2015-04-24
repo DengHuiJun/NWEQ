@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8e8e8">
+
+    <zero.com.nweq.myview.SlideShowView
+        android:id="@+id/slide_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        >
+        </zero.com.nweq.myview.SlideShowView>
+
+    <GridView
+        android:layout_marginTop="10dp"
+        android:id="@+id/main_gv"
+        android:columnWidth="90dp"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </GridView>
+
+    <ListView
+        android:id="@+id/home_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="5dp"
+        >
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="3dp"
+        android:id="@+id/main_top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_theme_light"
+        >
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/ll_main_postion"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/main_position"
+                style="@style/main_ic"
+                android:id="@+id/ic_main_postion"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="定位"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_main_postion"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#4f4f2f"
+            android:textSize="24sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:id="@+id/main_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="天下农屋，e你所求"/>
+
+        <LinearLayout
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/ll_main_search"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/main_search"
+                style="@style/main_ic"
+                android:id="@+id/ic_main_search"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="搜索"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_main_search"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_theme_darker">
+
+        <LinearLayout
+            android:background="@color/custom_theme_dark"
+            android:id="@+id/bottom_home"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/main_house"
+                style="@style/main_ic"
+                android:id="@+id/ic_bottom_home"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="首页"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_bottom_home"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_news"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:src="@drawable/main_star"
+                style="@style/main_ic"
+                android:id="@+id/ic_bottom_collect"/>
+
+            <TextView
+                android:text="资讯"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_bottom_collect"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_tese"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:src="@drawable/main_tese"
+                style="@style/main_ic"
+                android:id="@+id/ic_bottom_spe"/>
+
+            <TextView
+                android:text="特色"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_bottom_spe"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_me"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:src="@drawable/main_user"
+                style="@style/main_ic"
+                android:id="@+id/ic_bottom_me"/>
+
+            <TextView
+                android:text="我的"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_bottom_me"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

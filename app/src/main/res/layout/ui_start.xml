@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id = "@+id/my_view_pager"
+        android:layout_width ="match_parent"
+        android:layout_height ="match_parent"
+        />
+
+    <LinearLayout
+        android:background="@color/custom_theme_primary"
+        android:id="@+id/start_ll"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/start_img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_selector"
+            android:padding="15dp"/>
+
+        <ImageView
+            android:id="@+id/start_img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_selector"
+            android:padding="15dp"/>
+
+        <ImageView
+            android:id="@+id/start_img_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_selector"
+            android:padding="15dp"/>
+
+        <ImageView
+            android:id="@+id/start_img_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_selector"
+            android:padding="15dp"/>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

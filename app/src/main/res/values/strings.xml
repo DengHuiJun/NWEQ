@@ -1,4 +1,24 @@
 <resources>
     <string name="app_name">农屋e求</string>
     <string name="title_activity_main">农屋e求</string>
+
+    <string name="standard">Standard</string>
+    <string-array name="jazzy_effects">
+        <item>@string/standard</item>
+        <item>Grow</item>
+        <item>Cards</item>
+        <item>Curl</item>
+        <item>Wave</item>
+        <item>Flip</item>
+        <item>Fly</item>
+        <item>ReverseFly</item>
+        <item>Helix</item>
+        <item>Fan</item>
+        <item>Tilt</item>
+        <item>Zipper</item>
+        <item>Fade</item>
+        <item>Twirl</item>
+        <item>SlideIn</item>
+    </string-array>
+
 </resources>

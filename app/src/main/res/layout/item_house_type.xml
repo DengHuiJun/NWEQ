@@ -7,7 +7,6 @@
         android:id="@+id/house_type_img"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@drawable/ic_house_type"
         android:layout_gravity="center"
         />
 

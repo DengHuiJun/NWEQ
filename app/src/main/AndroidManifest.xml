@@ -50,6 +50,14 @@
             android:label="@string/title_activity_main" >
 
         </activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="@string/title_activity_main" >
+
+        </activity>
+
+        <activity android:name=".ui.OrderActivity"
+            android:label="@string/title_activity_main"/>
     </application>
 
 </manifest>

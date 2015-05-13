@@ -1,7 +1,10 @@
 package zero.com.nweq.ui;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -32,6 +35,18 @@ public class ThemeActivity extends Activity {
 
         listView.setAdapter(adapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                House house = houseList.get(position);
+                Intent intent = new Intent(ThemeActivity.this,OrderActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("house",house);
+                intent.putExtra("data",bundle);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void initHouse() {
@@ -43,6 +58,7 @@ public class ThemeActivity extends Activity {
         house1.setHousePlace("哈尔滨牡丹江附近");
         house1.setTheme("避暑");
         house1.setTime("农屋闲置");
+        house1.setPrice(80);
         house1.setImageId(R.drawable.view_one);
         houseList.add(house1);
 
@@ -52,6 +68,7 @@ public class ThemeActivity extends Activity {
         house2.setHousePlace("哈尔滨周边");
         house2.setTheme("避暑");
         house2.setTime("农屋闲置");
+        house2.setPrice(60);
         house2.setImageId(R.drawable.bs1);
         houseList.add(house2);
 
@@ -60,6 +77,7 @@ public class ThemeActivity extends Activity {
         house3.setHousePlace("贵阳花溪区");
         house3.setTheme("避暑");
         house3.setTime("农屋闲置");
+        house3.setPrice(50);
         house3.setImageId(R.drawable.bs2);
         houseList.add(house3);
 
@@ -68,6 +86,7 @@ public class ThemeActivity extends Activity {
         house4.setHousePlace("黑龙江垦区");
         house4.setTheme("避暑");
         house4.setTime("农屋闲置");
+        house4.setPrice(55);
         house4.setImageId(R.drawable.bs3);
         houseList.add(house4);
 
@@ -76,6 +95,7 @@ public class ThemeActivity extends Activity {
         house5.setHousePlace("哈尔滨太阳岛地区");
         house5.setTheme("避暑");
         house5.setTime("农屋闲置");
+        house5.setPrice(60);
         house5.setImageId(R.drawable.bs4);
         houseList.add(house5);
 

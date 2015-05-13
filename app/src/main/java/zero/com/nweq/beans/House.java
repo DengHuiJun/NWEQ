@@ -1,15 +1,26 @@
 package zero.com.nweq.beans;
 
+import java.io.Serializable;
+
 /**
  * Created by luowei on 15/4/21.
  */
-public class House {
+public class House implements Serializable{
     private String houseName;
     private String housePlace;
     private String theme;
     private String houseInfo;
     private String time;
+    private int price;
     private int imageId;
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
 
     public void setHouseName(String houseName) {
         this.houseName = houseName;

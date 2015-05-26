@@ -39,7 +39,7 @@ public class OrderActivity extends Activity {
 
         content.setText(temp);
 
-        price.setText("租赁费："+house.getPrice()+"/天");
+        price.setText("租赁费："+house.getPrice()+"元/天");
 
 
     }

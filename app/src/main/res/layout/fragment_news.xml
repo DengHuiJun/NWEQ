@@ -9,7 +9,8 @@
         android:id="@+id/news_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:divider="#e8e8e8"
         app:only_animate_new_items="false"
         app:only_animate_fling="false"
         app:max_velocity="0" />
